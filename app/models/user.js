@@ -4,14 +4,14 @@ import emailFieldValidation from 'rarwe/validations/email-field';
 import passwordFieldValidation from 'rarwe/validations/password-field';
 
 
-const { attr } = DS;
+const { Model, attr } = DS;
 
 const Validations = buildValidations({
     email: emailFieldValidation,
     password: passwordFieldValidation
 });
 
-export default DS.Model.extend(Validations, {
+export default Model.extend(Validations, {
     email: attr('string'),
     password: attr('string'),
 });

@@ -22,7 +22,6 @@ export default Controller.extend({
 
         async save() {
             let band = this.model;
-            await band.save()
             this.set('showErrors.description', true);
             if (band.validations.isValid) {
                 await band.save();
