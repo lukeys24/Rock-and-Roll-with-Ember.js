@@ -3,7 +3,6 @@ import { visit, fillIn, click, triggerEvent } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import setupMirageTest from 'ember-cli-mirage/test-support/setup-mirage';
 
-
 module('Acceptance | Login', function(hooks) {
   setupApplicationTest(hooks);
   setupMirageTest(hooks);

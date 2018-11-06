@@ -4,7 +4,7 @@ import emailFieldValidation from 'rarwe/validations/email-field';
 import passwordFieldValidation from 'rarwe/validations/password-field';
 
 
-const { Model, attr } = DS;
+const { attr } = DS;
 
 const Validations = buildValidations({
     email: emailFieldValidation,
